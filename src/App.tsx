@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import './App.css'
 
-const API_BASE: string = import.meta.env.VITE_API_BASE_URL ?? ''
+const API_BASE: string = import.meta.env.VITE_API_BASE_URL ?? 'https://yt-downloader-uj1w.onrender.com'
 
 type DownloadFormat = 'mp4' | 'mp3'
 type DownloadStatus = 'idle' | 'downloading' | 'converting' | 'success' | 'error'
